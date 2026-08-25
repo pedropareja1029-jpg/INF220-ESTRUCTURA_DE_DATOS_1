@@ -1,71 +1,32 @@
+# Unidad 0 - Aplicación de PEP 8 en Python
 
-## 2. `unidad0/README.md`
+## Descripción
 
-```markdown
-# Unidad 0 · Estándares y Buenas Prácticas de Codificación
+En esta unidad se trabajó con la guía de estilo **PEP 8**, que establece recomendaciones para escribir código Python de forma clara, ordenada y fácil de mantener. Se aplicaron normas relacionadas con la indentación, nombres de variables y métodos, espacios, longitud de líneas, comentarios y organización del código.
 
-## 🎯 Objetivo
-
-Aplicar las recomendaciones de PEP 8 para escribir programas en Python de
-forma clara, ordenada, legible y fácil de mantener.
+A continuación, se presentan dos programas desarrollados siguiendo estas recomendaciones.
 
 ---
 
-## 📚 Lo aprendido
+## Código 1: Cálculo del promedio
 
-Durante esta unidad aprendí la importancia de seguir estándares de codificación
-al desarrollar programas en Python. Se aplicaron las recomendaciones de PEP 8,
-como el uso de nombres descriptivos, `snake_case` para variables y funciones,
-una correcta indentación de cuatro espacios, separación adecuada entre bloques
-de código y el uso de docstrings.
+Este programa permite ingresar tres notas y calcular su promedio.
 
-También se utilizó la estructura `if __name__ == "__main__":` para definir el
-punto principal de ejecución de los programas. Estas buenas prácticas permiten
-crear código más organizado y fácil de comprender.
+```python
+def calcular_promedio(nota_1, nota_2, nota_3):
+    """Calcula el promedio de tres notas."""
+    return (nota_1 + nota_2 + nota_3) / 3
 
----
 
-## 1. Convenciones de nombres
+def main():
+    nota_1 = float(input("Ingrese la primera nota: "))
+    nota_2 = float(input("Ingrese la segunda nota: "))
+    nota_3 = float(input("Ingrese la tercera nota: "))
 
-PEP 8 recomienda utilizar diferentes convenciones según el elemento del
-programa.
+    promedio = calcular_promedio(nota_1, nota_2, nota_3)
 
-| Elemento | Convención | Ejemplo |
-|---|---|---|
-| Variables | `snake_case` | `nombre_estudiante` |
-| Funciones | `snake_case` | `calcular_promedio()` |
-| Clases | `PascalCase` | `Estudiante` |
-| Constantes | `UPPER_SNAKE_CASE` | `MAXIMO_NOTAS` |
+    print(f"El promedio es: {promedio:.2f}")
 
----
 
-## 2. Reglas aplicadas
-
-En los ejemplos de esta unidad se aplicaron las siguientes prácticas:
-
-- Uso de 4 espacios para la indentación.
-- Nombres descriptivos para variables y funciones.
-- Uso de `snake_case`.
-- Espacios alrededor de operadores.
-- Separación entre funciones.
-- Uso de docstrings.
-- Uso del patrón `if __name__ == "__main__":`.
-- Código organizado en funciones.
-
----
-
-## 📁 Ejemplos
-
-| Archivo | Descripción |
-|---|---|
-| `ejemplos/01_pep8_y_docstrings.py` | Ejemplo de funciones, nombres descriptivos y docstrings |
-| `ejemplos/02_pep8_funciones.py` | Ejemplo de programa organizado utilizando funciones |
-
----
-
-## 🧪 Ejercicios
-
-Los ejercicios y actividades de la Unidad 0 se encuentran en la carpeta:
-
-```text
-ejercicios/
+if __name__ == "__main__":
+    main()
