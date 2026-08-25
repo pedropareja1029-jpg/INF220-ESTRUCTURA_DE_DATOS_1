@@ -26,12 +26,7 @@ Cada unidad está organizada en carpetas independientes.
 ```text
 INF220-EstructurasDatos1/
 │
-├── unidad0/
-│   ├── README.md
-│   ├── ejemplos/
-│   └── ejercicios/
-│
-├── unidad1/
+├── unidad/
 │   ├── README.md
 │   ├── ejemplos/
 │   └── ejercicios/
@@ -44,8 +39,6 @@ INF220-EstructurasDatos1/
 ## ⚙️ Requisitos
 
 * Python 3.8 o superior.
-* GitHub.
-
 ---
 
 ## 👨‍💻 Estudiante
