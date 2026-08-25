@@ -1,0 +1,71 @@
+
+## 2. `unidad0/README.md`
+
+```markdown
+# Unidad 0 · Estándares y Buenas Prácticas de Codificación
+
+## 🎯 Objetivo
+
+Aplicar las recomendaciones de PEP 8 para escribir programas en Python de
+forma clara, ordenada, legible y fácil de mantener.
+
+---
+
+## 📚 Lo aprendido
+
+Durante esta unidad aprendí la importancia de seguir estándares de codificación
+al desarrollar programas en Python. Se aplicaron las recomendaciones de PEP 8,
+como el uso de nombres descriptivos, `snake_case` para variables y funciones,
+una correcta indentación de cuatro espacios, separación adecuada entre bloques
+de código y el uso de docstrings.
+
+También se utilizó la estructura `if __name__ == "__main__":` para definir el
+punto principal de ejecución de los programas. Estas buenas prácticas permiten
+crear código más organizado y fácil de comprender.
+
+---
+
+## 1. Convenciones de nombres
+
+PEP 8 recomienda utilizar diferentes convenciones según el elemento del
+programa.
+
+| Elemento | Convención | Ejemplo |
+|---|---|---|
+| Variables | `snake_case` | `nombre_estudiante` |
+| Funciones | `snake_case` | `calcular_promedio()` |
+| Clases | `PascalCase` | `Estudiante` |
+| Constantes | `UPPER_SNAKE_CASE` | `MAXIMO_NOTAS` |
+
+---
+
+## 2. Reglas aplicadas
+
+En los ejemplos de esta unidad se aplicaron las siguientes prácticas:
+
+- Uso de 4 espacios para la indentación.
+- Nombres descriptivos para variables y funciones.
+- Uso de `snake_case`.
+- Espacios alrededor de operadores.
+- Separación entre funciones.
+- Uso de docstrings.
+- Uso del patrón `if __name__ == "__main__":`.
+- Código organizado en funciones.
+
+---
+
+## 📁 Ejemplos
+
+| Archivo | Descripción |
+|---|---|
+| `ejemplos/01_pep8_y_docstrings.py` | Ejemplo de funciones, nombres descriptivos y docstrings |
+| `ejemplos/02_pep8_funciones.py` | Ejemplo de programa organizado utilizando funciones |
+
+---
+
+## 🧪 Ejercicios
+
+Los ejercicios y actividades de la Unidad 0 se encuentran en la carpeta:
+
+```text
+ejercicios/
