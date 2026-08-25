@@ -42,7 +42,7 @@ INF220-EstructurasDatos1/
 
 ## 👨‍💻 Estudiante
 
-**Pedro Pareja**
+**Pedro Pareja Cuellar**
 
 **Materia:** Estructuras de Datos I
 **Universidad:** UAGRM
