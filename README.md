@@ -28,7 +28,6 @@ INF220-EstructurasDatos1/
 │
 ├── unidad/
 │   ├── README.md
-│   ├── ejemplos/
 │   └── ejercicios/
 │
 └── README.md
