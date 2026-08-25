@@ -1,4 +1,33 @@
-# INF220-ESTRUCTURA_DE_DATOS_1
-Repositorios de desafíos, tareas, proyectos realizados en la materia de estrctura de datos 1
-git clone https://github.com/profjcp/INF220-EstructurasDatos1.git
-cd INF220-EstructurasDatos1
+# 📚 Estructuras de Datos I
+
+> Repositorio personal de la materia Estructuras de Datos I.
+>
+> Código en Python · Ejemplos · Ejercicios
+
+---
+
+## 🎯 Descripción
+
+Este repositorio contiene los trabajos, ejemplos y ejercicios desarrollados
+durante la materia de Estructuras de Datos I.
+
+Cada unidad está organizada en carpetas que contienen la teoría, ejemplos
+prácticos y ejercicios correspondientes.
+
+---
+
+## 📂 Contenido del repositorio
+
+| Unidad | Tema |
+|---|---|
+| [Unidad 0](unidad0/) | Estándares y buenas prácticas de codificación |
+
+---
+
+## 🗂️ Estructura del repositorio
+
+```text
+unidadX/
+├── README.md
+├── ejemplos/
+└── ejercicios/
