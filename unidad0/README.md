@@ -1,5 +1,5 @@
-# Unidad 0
+# Unidad 0 - Aplicación de PEP 8 en Python
 
-## PEP 8
+## Descripción
 
-En esta unidad se trabajará con las normas de estilo PEP 8 para Python.
+En esta unidad se trabajó con la guía de estilo **PEP 8**, que establece recomendaciones para escribir código Python de forma clara, ordenada y fácil de mantener. Se aplicaron normas relacionadas con la indentación, nombres de variables y métodos, espacios, longitud de líneas, comentarios y organización del código.
