@@ -1,4 +1,3 @@
-```python
 from abc import ABC, abstractmethod
 
 
@@ -82,4 +81,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-```
