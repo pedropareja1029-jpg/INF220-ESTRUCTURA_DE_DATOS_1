@@ -1,17 +1,52 @@
 
-import flet as ft
+class Controlador:
+    """Conecta la vista con el modelo."""
 
-from Models.lista_enlazada import ListaEnlazada
-from Views.vista import Vista
-from Controller.controlador import Controlador
+    def __init__(self, vista, modelo):
+        self.vista = vista
+        self.modelo = modelo
+        self.vista.controlador = self
 
+        self.mostrar_tareas()
 
-def main(page: ft.Page):
-    vista = Vista(page)
-    modelo = ListaEnlazada()
-    Controlador(vista, modelo)
+    def agregar_tarea(self):
+        datos = self.vista.obtener_tarea().strip()
 
+        if not datos:
+            self.vista.mostrar_mensaje(
+                "Escribe una tarea antes de agregarla."
+            )
+            return
 
-if __name__ == "__main__":
-    ft.run(main)
+        self.modelo.agregar_tarea(datos)
+        self.vista.limpiar_entrada()
+        self.vista.mostrar_mensaje("Tarea agregada.")
+        self.mostrar_tareas()
 
+    def completar_tarea(self, datos):
+        resultado = self.modelo.completar_tarea(datos)
+
+        if resultado:
+            self.vista.mostrar_mensaje("Tarea completada.")
+        else:
+            self.vista.mostrar_mensaje(
+                "No se encontró la tarea."
+            )
+
+        self.mostrar_tareas()
+
+    def eliminar_tarea(self, datos):
+        resultado = self.modelo.eliminar_tarea(datos)
+
+        if resultado:
+            self.vista.mostrar_mensaje("Tarea eliminada.")
+        else:
+            self.vista.mostrar_mensaje(
+                "No se encontró la tarea."
+            )
+
+        self.mostrar_tareas()
+
+    def mostrar_tareas(self):
+        tareas = self.modelo.obtener_tareas()
+        self.vista.mostrar_tareas(tareas)
